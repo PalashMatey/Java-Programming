@@ -12,6 +12,20 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends Karel {
 	
+	public void run()
+	{
+		while(frontIsClear())
+		{
+			move();
+		}
+		turnRight();
+		
+	}
 	// You fill in this part
-	
+	private void turnRight()
+	{
+		turnLeft();
+		turnLeft();
+		turnLeft();
+	}
 }
