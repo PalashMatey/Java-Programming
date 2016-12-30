@@ -31,7 +31,7 @@ public class CollectNewspaperKarel extends Karel {
 		{
 			move();
 		}
-		turnRight();
+		turnLeft();
 		
 	}
 	// You fill in this part
