@@ -22,7 +22,8 @@ public class StoneMasonKarel extends SuperKarel {
 			descendColumn();
 			moveNextColumn();
 		}
-		
+		ascendColumn();
+		descendColumn();
 	
 	}
 	
