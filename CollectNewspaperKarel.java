@@ -24,7 +24,7 @@ public class CollectNewspaperKarel extends Karel {
 		move();
 		pickBeeper();
 		turnAround();
-		move():
+		move();
 		turnRight();
 		while(frontIsClear())
 		{
