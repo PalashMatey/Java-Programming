@@ -15,6 +15,21 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 
 	// You fill in this part
+	public void run()
+	{
+		fillLine();
+	//	moveBack();
+		//getMidPoint();
+	}
 	
+	private void fillLine()
+	{
+		putBeeper();
+		while(frontIsClear())
+		{
+			move();
+			putBeeper();
+		}
+	}
 	
 }
