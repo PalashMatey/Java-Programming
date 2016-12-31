@@ -1,1 +1,1 @@
-#Assignment 1 Completed
+#Assignment 1: Completed
