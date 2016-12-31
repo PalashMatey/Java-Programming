@@ -18,8 +18,8 @@ public class MidpointFindingKarel extends SuperKarel {
 	public void run()
 	{
 		fillLine();
-	//	moveBack();
-		//getMidPoint();
+		moveBack();
+		getMidPoint();
 	}
 	
 	private void fillLine()
@@ -30,6 +30,50 @@ public class MidpointFindingKarel extends SuperKarel {
 			move();
 			putBeeper();
 		}
+		turnAround();
+	}
+	private void moveBack()
+	{
+		while (frontIsClear()) {
+			move();
+		}
+		turnAround();
 	}
 	
+	private void moveToLastBeeperAhead()
+	{
+		while(frontIsClear() && beepersPresent())
+		{
+			move();
+		}
+		if (noBeepersPresent())
+		{
+			turnAround();
+			move();
+			turnAround();
+		}
+		
+
+	}
+	
+	private void getMidPoint()
+	{
+		while(beepersPresent())
+		{
+			moveToLastBeeperAhead();
+			pickBeeper();
+			turnAround();
+			if(frontIsClear())
+			{
+				move();
+			}
+		}
+		
+		turnAround();
+		if (frontIsClear()) {
+			move();
+		}
+		putBeeper();
+	}
+
 }
