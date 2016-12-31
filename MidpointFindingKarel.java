@@ -15,5 +15,6 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 
 	// You fill in this part
-
+	
+	
 }
